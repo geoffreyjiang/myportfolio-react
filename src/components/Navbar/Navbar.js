@@ -3,37 +3,41 @@ import React from "react";
 const Navbar = () => {
   return (
     <div>
-      <nav>
-        <div className="nav-wrapper">
-          <a href="#" class="left">
-            GJ
-          </a>
-          <ul id="nav-mobile" class="right ">
-            <li>
-              <a href="sass.html">Sass</a>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a className="navbar-brand" href="#">
+          Geoffrey
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul className="navbar-nav ml-auto text-right">
+            <li className="nav-item active">
+              <a className="nav-link" href="#">
+                About
+              </a>
             </li>
-            <li>
-              <a href="badges.html">Components</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Projects
+              </a>
             </li>
-            <li>
-              <a href="collapsible.html">JavaScript</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Contact
+              </a>
             </li>
+            <li className="nav-item dropdown"></li>
           </ul>
         </div>
-        <ul class="sidenav" id="mobile-demo">
-          <li>
-            <a href="sass.html">Sass</a>
-          </li>
-          <li>
-            <a href="badges.html">Components</a>
-          </li>
-          <li>
-            <a href="collapsible.html">Javascript</a>
-          </li>
-          <li>
-            <a href="mobile.html">Mobile</a>
-          </li>
-        </ul>
       </nav>
     </div>
   );
